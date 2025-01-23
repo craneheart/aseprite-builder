@@ -17,7 +17,7 @@ Build Aseprite using Github action
     runs-on: ${{ matrix.os }}
     strategy:
         matrix:
-          os: [ windows-latest, ubuntu-latest, macOS-latest ] # <------- remove platform(s) you don't want
+          os: [ ubuntu-latest ] # <------- remove platform(s) you don't want
   ```
 - **enable workflow `Build and release Aseprite` in `Actions -- Workflows`**
 - **update `BuildLog.md` and push** (This step triggers the building process. You definitely want to do this!)
